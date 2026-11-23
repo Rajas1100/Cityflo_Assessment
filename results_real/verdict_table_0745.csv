@@ -1,0 +1,7 @@
+route,name,verdict,engine_status,delay_min,confidence,reason
+9,Thane → Powai,HOLD,unknown,,0.0,TRIP_013 has reached its last stop; nothing is running late.
+11,Borivali → BKC,CALL_DRIVER,late,59.0,0.95,"TRIP_014 (V-06) has not left the origin; GPS is fresh, so this is the bus, not the feed. A push will not fix it."
+12,Mulund → Andheri E,PUSH_LATE 10 min,late,10.0,0.95,TRIP_015 (V-10) is 10.0 min behind the timetable at 50% of the route; GPS 9s old.
+14,Kandivali → Lower Parel,NO_VERDICT,unknown,,0.2,TRIP_016 (V-04): last ping is 48.1 min old (limit 8 min).
+17,Vashi → Worli,NO_VERDICT,unknown,,0.2,TRIP_017 (V-05): last ping is 17.3 min old (limit 8 min).
+21,Ghatkopar → BKC,HOLD,on_time,1.0,0.95,TRIP_019 (V-09) is within 3 min of the timetable (+1.0 min).

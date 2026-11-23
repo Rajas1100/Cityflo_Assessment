@@ -1,0 +1,37 @@
+No bus in service · 9 Thane → Powai
+Certainty: High (no trip is scheduled right now)
+Why: No trip on Thane → Powai is in service at 07:45.
+Do next: No action needed.
+
+LATE by about 59 min · 11 Borivali → BKC
+Certainty: High (GPS updated 9 seconds ago)
+Why: Bus V-06 has not left the start. It was due out at 06:46 and its GPS is working.
+Evidence: 5 booked riders are still waiting at stops ahead.
+Could also be: The departure time may have been changed or boarding is still under way. Our timetable may not include a planned wait on this stretch.
+Do next: Call the driver now.
+
+LATE by about 10 min · 12 Mulund → Andheri E
+Certainty: High (GPS updated 9 seconds ago)
+Why: Bus V-10 reached its current point at 07:44. The timetable expects it there at 07:34.
+Evidence: 2 booked riders are still waiting at stops ahead. It is 50% of the way along the route.
+Could also be: The departure time may have been changed; check the dispatch sheet. Our timetable may not include a planned wait on this stretch.
+Do next: Warn riders at stops ahead.
+
+CANNOT TELL · 14 Kandivali → Lower Parel
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 06:40 trip was 48 min ago, 22% of the way.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+CANNOT TELL · 17 Vashi → Worli
+Certainty: Cannot tell (the data is not good enough to give a number)
+Why: The last GPS update for the 06:50 trip was 17 min ago, 71% of the way.
+Could also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.
+Do next: Phone the driver to confirm where the bus is.
+
+ON TIME · 21 Ghatkopar → BKC
+Certainty: High (GPS updated 5 seconds ago)
+Why: Bus V-09 is 30% of the way and 1 min behind the timetable.
+Evidence: 2 booked riders are still waiting at stops ahead.
+Could also be: GPS error could hide a delay of 1 to 2 min.
+Do next: No action needed.

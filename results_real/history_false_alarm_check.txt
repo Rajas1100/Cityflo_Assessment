@@ -1,0 +1,4 @@
+queries: 132 | verdicts: {'HOLD': 131, 'NO_VERDICT': 1}
+non-HOLD: 1
+  15 06:40 route 11: NO_VERDICT: TRIP_002 (V-06): no usable GPS pings for this trip.
+false PUSH_LATE: 0 | false CALL_DRIVER: 0

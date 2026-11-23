@@ -1,0 +1,409 @@
+{
+  "9": {
+    "route_id": 9,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "unknown",
+    "delay_minutes": null,
+    "confidence": 0.0,
+    "explanation": "No trip on Thane \u2192 Powai is in service at 07:45.",
+    "details": {
+      "trips": [
+        {
+          "trip_id": "TRIP_013",
+          "vehicle_id": "V-11",
+          "kind": "completed",
+          "trip_status": "on_time",
+          "delay_minutes": 0.0,
+          "trust": "ok",
+          "confidence": 0.0,
+          "distance_along_m": 13293,
+          "pct_complete": 0.988,
+          "last_ping_time": "2026-06-17 07:44:42",
+          "data_age_s": 18,
+          "expected_time_at_position": null,
+          "observed_time_at_position": null,
+          "stopped_minutes": 0.0,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": null,
+          "departure": "06:50"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      },
+      "unscheduled_vehicles": []
+    },
+    "verdict": {
+      "code": "HOLD",
+      "label": "HOLD",
+      "trip_id": "TRIP_013",
+      "reason": "TRIP_013 has reached its last stop; nothing is running late."
+    },
+    "dashboard": {
+      "headline": "No bus in service",
+      "severity": "info",
+      "how_late": "No bus in service",
+      "certainty": {
+        "label": "High",
+        "reason": "no trip is scheduled right now"
+      },
+      "why": "No trip on Thane \u2192 Powai is in service at 07:45.",
+      "evidence": [],
+      "alternatives": [],
+      "action": "No action needed.",
+      "text": "No bus in service \u00b7 9 Thane \u2192 Powai\nCertainty: High (no trip is scheduled right now)\nWhy: No trip on Thane \u2192 Powai is in service at 07:45.\nDo next: No action needed.",
+      "word_count": 34,
+      "read_seconds": 10
+    }
+  },
+  "11": {
+    "route_id": 11,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "late",
+    "delay_minutes": 59.0,
+    "confidence": 0.95,
+    "explanation": "Borivali \u2192 BKC is LATE at 07:45 by about 59 min. Trip TRIP_014 has not left the origin; it was due out at 06:46. 5 booked riders have not yet reached their boarding stop on this trip.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "TRIP_014",
+      "trips": [
+        {
+          "trip_id": "TRIP_014",
+          "vehicle_id": "V-06",
+          "kind": "live",
+          "trip_status": "late",
+          "delay_minutes": 59.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 14,
+          "pct_complete": 0.001,
+          "last_ping_time": "2026-06-17 07:44:51",
+          "data_age_s": 9,
+          "expected_time_at_position": "2026-06-17 06:46:00",
+          "observed_time_at_position": null,
+          "stopped_minutes": 58.9,
+          "flags": [
+            "AT_ORIGIN",
+            "NOT_DEPARTED"
+          ],
+          "reasons": [],
+          "riders_ahead_of_bus": 5,
+          "departure": "06:46"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      }
+    },
+    "verdict": {
+      "code": "CALL_DRIVER",
+      "label": "CALL_DRIVER",
+      "trip_id": "TRIP_014",
+      "reason": "TRIP_014 (V-06) has not left the origin; GPS is fresh, so this is the bus, not the feed. A push will not fix it."
+    },
+    "dashboard": {
+      "headline": "LATE by about 59 min",
+      "severity": "critical",
+      "how_late": "about 59 min behind the timetable",
+      "certainty": {
+        "label": "High",
+        "reason": "GPS updated 9 seconds ago"
+      },
+      "why": "Bus V-06 has not left the start. It was due out at 06:46 and its GPS is working.",
+      "evidence": [
+        "5 booked riders are still waiting at stops ahead."
+      ],
+      "alternatives": [
+        "The departure time may have been changed or boarding is still under way.",
+        "Our timetable may not include a planned wait on this stretch."
+      ],
+      "action": "Call the driver now.",
+      "text": "LATE by about 59 min \u00b7 11 Borivali \u2192 BKC\nCertainty: High (GPS updated 9 seconds ago)\nWhy: Bus V-06 has not left the start. It was due out at 06:46 and its GPS is working.\nEvidence: 5 booked riders are still waiting at stops ahead.\nCould also be: The departure time may have been changed or boarding is still under way. Our timetable may not include a planned wait on this stretch.\nDo next: Call the driver now.",
+      "word_count": 79,
+      "read_seconds": 24
+    }
+  },
+  "12": {
+    "route_id": 12,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "late",
+    "delay_minutes": 10.0,
+    "confidence": 0.95,
+    "explanation": "Mulund \u2192 Andheri E is LATE at 07:45 by about 10 min. Trip TRIP_015 (vehicle V-10) was last seen 9s ago, 5.7 km along the route (50%); the timetable has it there at 07:34 and it was there at 07:44. 2 booked riders have not yet reached their boarding stop on this trip.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "TRIP_015",
+      "trips": [
+        {
+          "trip_id": "TRIP_015",
+          "vehicle_id": "V-10",
+          "kind": "live",
+          "trip_status": "late",
+          "delay_minutes": 10.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 5671,
+          "pct_complete": 0.497,
+          "last_ping_time": "2026-06-17 07:44:51",
+          "data_age_s": 9,
+          "expected_time_at_position": "2026-06-17 07:34:48",
+          "observed_time_at_position": "2026-06-17 07:44:51",
+          "stopped_minutes": 0.3,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 2,
+          "departure": "07:05"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      }
+    },
+    "verdict": {
+      "code": "PUSH_LATE",
+      "label": "PUSH_LATE 10 min",
+      "trip_id": "TRIP_015",
+      "reason": "TRIP_015 (V-10) is 10.0 min behind the timetable at 50% of the route; GPS 9s old."
+    },
+    "dashboard": {
+      "headline": "LATE by about 10 min",
+      "severity": "warning",
+      "how_late": "about 10 min behind the timetable",
+      "certainty": {
+        "label": "High",
+        "reason": "GPS updated 9 seconds ago"
+      },
+      "why": "Bus V-10 reached its current point at 07:44. The timetable expects it there at 07:34.",
+      "evidence": [
+        "2 booked riders are still waiting at stops ahead.",
+        "It is 50% of the way along the route."
+      ],
+      "alternatives": [
+        "The departure time may have been changed; check the dispatch sheet.",
+        "Our timetable may not include a planned wait on this stretch."
+      ],
+      "action": "Warn riders at stops ahead.",
+      "text": "LATE by about 10 min \u00b7 12 Mulund \u2192 Andheri E\nCertainty: High (GPS updated 9 seconds ago)\nWhy: Bus V-10 reached its current point at 07:44. The timetable expects it there at 07:34.\nEvidence: 2 booked riders are still waiting at stops ahead. It is 50% of the way along the route.\nCould also be: The departure time may have been changed; check the dispatch sheet. Our timetable may not include a planned wait on this stretch.\nDo next: Warn riders at stops ahead.",
+      "word_count": 85,
+      "read_seconds": 26
+    }
+  },
+  "14": {
+    "route_id": 14,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "unknown",
+    "delay_minutes": null,
+    "confidence": 0.2,
+    "explanation": "Cannot tell whether Kandivali \u2192 Lower Parel is late at 07:45. Trip TRIP_016 could not be assessed: last ping is 48.1 min old (limit 8 min). Last known position was 5.0 km along the route.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": null,
+      "trips": [
+        {
+          "trip_id": "TRIP_016",
+          "vehicle_id": "V-04",
+          "kind": "live",
+          "trip_status": "unknown",
+          "delay_minutes": 0.2,
+          "trust": "untrustworthy",
+          "confidence": 0.0,
+          "distance_along_m": 5044,
+          "pct_complete": 0.223,
+          "last_ping_time": "2026-06-17 06:56:54",
+          "data_age_s": 2886,
+          "expected_time_at_position": "2026-06-17 06:56:43",
+          "observed_time_at_position": "2026-06-17 06:56:54",
+          "stopped_minutes": 0.3,
+          "flags": [],
+          "reasons": [
+            "last ping is 48.1 min old (limit 8 min)"
+          ],
+          "riders_ahead_of_bus": 9,
+          "departure": "06:40"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      }
+    },
+    "verdict": {
+      "code": "NO_VERDICT",
+      "label": "NO_VERDICT",
+      "trip_id": "TRIP_016",
+      "reason": "TRIP_016 (V-04): last ping is 48.1 min old (limit 8 min)."
+    },
+    "dashboard": {
+      "headline": "CANNOT TELL",
+      "severity": "warning",
+      "how_late": "unknown",
+      "certainty": {
+        "label": "Cannot tell",
+        "reason": "the data is not good enough to give a number"
+      },
+      "why": "The last GPS update for the 06:40 trip was 48 min ago, 22% of the way.",
+      "evidence": [],
+      "alternatives": [
+        "The tracker or phone may have lost signal; the bus could be running fine.",
+        "We do not treat missing data as on time."
+      ],
+      "action": "Phone the driver to confirm where the bus is.",
+      "text": "CANNOT TELL \u00b7 14 Kandivali \u2192 Lower Parel\nCertainty: Cannot tell (the data is not good enough to give a number)\nWhy: The last GPS update for the 06:40 trip was 48 min ago, 22% of the way.\nCould also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.\nDo next: Phone the driver to confirm where the bus is.",
+      "word_count": 75,
+      "read_seconds": 22
+    }
+  },
+  "17": {
+    "route_id": 17,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "unknown",
+    "delay_minutes": null,
+    "confidence": 0.2,
+    "explanation": "Cannot tell whether Vashi \u2192 Worli is late at 07:45. Trip TRIP_017 could not be assessed: last ping is 17.3 min old (limit 8 min). Last known position was 14.6 km along the route.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": null,
+      "trips": [
+        {
+          "trip_id": "TRIP_017",
+          "vehicle_id": "V-05",
+          "kind": "live",
+          "trip_status": "unknown",
+          "delay_minutes": -8.2,
+          "trust": "untrustworthy",
+          "confidence": 0.0,
+          "distance_along_m": 14569,
+          "pct_complete": 0.706,
+          "last_ping_time": "2026-06-17 07:27:40",
+          "data_age_s": 1040,
+          "expected_time_at_position": "2026-06-17 07:35:54",
+          "observed_time_at_position": "2026-06-17 07:27:40",
+          "stopped_minutes": 1.0,
+          "flags": [],
+          "reasons": [
+            "last ping is 17.3 min old (limit 8 min)"
+          ],
+          "riders_ahead_of_bus": 3,
+          "departure": "06:50"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      }
+    },
+    "verdict": {
+      "code": "NO_VERDICT",
+      "label": "NO_VERDICT",
+      "trip_id": "TRIP_017",
+      "reason": "TRIP_017 (V-05): last ping is 17.3 min old (limit 8 min)."
+    },
+    "dashboard": {
+      "headline": "CANNOT TELL",
+      "severity": "warning",
+      "how_late": "unknown",
+      "certainty": {
+        "label": "Cannot tell",
+        "reason": "the data is not good enough to give a number"
+      },
+      "why": "The last GPS update for the 06:50 trip was 17 min ago, 71% of the way.",
+      "evidence": [],
+      "alternatives": [
+        "The tracker or phone may have lost signal; the bus could be running fine.",
+        "We do not treat missing data as on time."
+      ],
+      "action": "Phone the driver to confirm where the bus is.",
+      "text": "CANNOT TELL \u00b7 17 Vashi \u2192 Worli\nCertainty: Cannot tell (the data is not good enough to give a number)\nWhy: The last GPS update for the 06:50 trip was 17 min ago, 71% of the way.\nCould also be: The tracker or phone may have lost signal; the bus could be running fine. We do not treat missing data as on time.\nDo next: Phone the driver to confirm where the bus is.",
+      "word_count": 74,
+      "read_seconds": 22
+    }
+  },
+  "21": {
+    "route_id": 21,
+    "timestamp": "2026-06-17 07:45:00",
+    "status": "on_time",
+    "delay_minutes": 1.0,
+    "confidence": 0.95,
+    "explanation": "Ghatkopar \u2192 BKC is on time at 07:45 (within 3 min of the timetable). Trip TRIP_019 (vehicle V-09) was last seen 5s ago, 1.4 km along the route (30%); the timetable has it there at 07:43 and it was there at 07:44. 2 booked riders have not yet reached their boarding stop on this trip.",
+    "details": {
+      "roll_up_rule": "worst trustworthy live trip decides; any live trip without trustworthy data blocks an 'on_time' answer",
+      "decision_trip": "TRIP_019",
+      "trips": [
+        {
+          "trip_id": "TRIP_018",
+          "vehicle_id": "V-03",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": -0.3,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 3039,
+          "pct_complete": 0.628,
+          "last_ping_time": "2026-06-17 07:44:51",
+          "data_age_s": 9,
+          "expected_time_at_position": "2026-06-17 07:45:07",
+          "observed_time_at_position": "2026-06-17 07:44:51",
+          "stopped_minutes": 0.6,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 1,
+          "departure": "07:20"
+        },
+        {
+          "trip_id": "TRIP_019",
+          "vehicle_id": "V-09",
+          "kind": "live",
+          "trip_status": "on_time",
+          "delay_minutes": 1.0,
+          "trust": "ok",
+          "confidence": 0.95,
+          "distance_along_m": 1436,
+          "pct_complete": 0.297,
+          "last_ping_time": "2026-06-17 07:44:55",
+          "data_age_s": 5,
+          "expected_time_at_position": "2026-06-17 07:43:52",
+          "observed_time_at_position": "2026-06-17 07:44:55",
+          "stopped_minutes": 0.6,
+          "flags": [],
+          "reasons": [],
+          "riders_ahead_of_bus": 2,
+          "departure": "07:32"
+        }
+      ],
+      "baseline": {
+        "n": 2,
+        "available": false
+      }
+    },
+    "verdict": {
+      "code": "HOLD",
+      "label": "HOLD",
+      "trip_id": "TRIP_019",
+      "reason": "TRIP_019 (V-09) is within 3 min of the timetable (+1.0 min)."
+    },
+    "dashboard": {
+      "headline": "ON TIME",
+      "severity": "ok",
+      "how_late": "within 3 min of the timetable",
+      "certainty": {
+        "label": "High",
+        "reason": "GPS updated 5 seconds ago"
+      },
+      "why": "Bus V-09 is 30% of the way and 1 min behind the timetable.",
+      "evidence": [
+        "2 booked riders are still waiting at stops ahead."
+      ],
+      "alternatives": [
+        "GPS error could hide a delay of 1 to 2 min."
+      ],
+      "action": "No action needed.",
+      "text": "ON TIME \u00b7 21 Ghatkopar \u2192 BKC\nCertainty: High (GPS updated 5 seconds ago)\nWhy: Bus V-09 is 30% of the way and 1 min behind the timetable.\nEvidence: 2 booked riders are still waiting at stops ahead.\nCould also be: GPS error could hide a delay of 1 to 2 min.\nDo next: No action needed.",
+      "word_count": 57,
+      "read_seconds": 17
+    }
+  }
+}
